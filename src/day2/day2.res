@@ -51,7 +51,7 @@ let getScoreFromResult = (result) => {
 }
 
 let score = reduce(rounds, (acc, round) => {
-  if (Js.String.length(round) > 0) {
+  if (Js.String.length(round) === 3) {
     let letters = Js.String.split(" ", round)
     let enemy = letters[0]
     let player = letters[1]
@@ -95,7 +95,7 @@ let getShapeFromResult = (enemy, result) => {
 }
 
 let score2 = reduce(rounds, (acc, round) => {
-  if (Js.String.length(round) > 0) {
+  if (Js.String.length(round) === 3) {
     let letters = Js.String.split(" ", round)
     let enemy = letters[0]
     let player = letters[1]

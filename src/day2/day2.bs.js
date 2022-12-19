@@ -98,7 +98,7 @@ function getScoreFromResult(result) {
 }
 
 var score = rounds.reduce((function (acc, round) {
-        if (round.length <= 0) {
+        if (round.length !== 3) {
           return acc + 0 | 0;
         }
         var letters = Js_string.split(" ", round);
@@ -173,7 +173,7 @@ function getShapeFromResult(enemy, result) {
 }
 
 var score2 = rounds.reduce((function (acc, round) {
-        if (round.length <= 0) {
+        if (round.length !== 3) {
           return acc + 0 | 0;
         }
         var letters = Js_string.split(" ", round);
