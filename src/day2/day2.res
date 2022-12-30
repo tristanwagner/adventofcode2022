@@ -63,7 +63,7 @@ let score = reduce(rounds, (acc, round) => {
     let currentScore = playerScoreFromShape + playerScoreFromResult
     acc + currentScore
   } else  {
-    acc + 0
+    acc
   }
 } ,0)
 
@@ -107,7 +107,7 @@ let score2 = reduce(rounds, (acc, round) => {
     let currentScore = playerScoreFromShape + playerScoreFromResult
     acc + currentScore
   } else  {
-    acc + 0
+    acc
   }
 } ,0)
 
